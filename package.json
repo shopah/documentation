@@ -1,0 +1,17 @@
+{
+  "name": "documentation",
+  "version": "1.0.0",
+  "description": "Shopah Express Project Documentation",
+  "main": "app.js",
+  "repository": "git@github.com:shopah/documentation.git",
+  "author": "Lexacle Technologies <lexacletechnologies@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.36"
+  }
+}
