@@ -1,0 +1,7 @@
+{
+  "hosting": {
+    "site": "shopahdocumentation",
+    "public": "./docs/.vuepress/dist",
+    "ignore": ["deploy.sh", "firebase.json", "**/.*", "**/node_modules/**"]
+  }
+}

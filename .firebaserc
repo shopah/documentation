@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "shopahexpress": {
+      "hosting": {
+        "documentation": [
+          "shopahdocumentation"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "shopahexpress"
+  }
+}
