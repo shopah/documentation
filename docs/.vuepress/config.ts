@@ -5,8 +5,12 @@ export default defineUserConfig<DefaultThemeOptions>({
   // site config
   lang: "en-US",
   title: "Shopah Express",
-  description:
-    "A guide to Shopah Express website and mobile application administration usage",
+  description: "E-Commerce Project Management User Guide",
+  head: [
+    ["link", { rel: "manifest", href: "/manifest.webmanifest" }],
+    ["meta", { name: "theme-color", content: "#3eaf7c" }],
+    ["link", { rel: "icon", href: "/images/favicon.ico" }],
+  ],
   plugins: [
     [
       "@vuepress/plugin-search",
@@ -15,18 +19,22 @@ export default defineUserConfig<DefaultThemeOptions>({
           "/": {
             placeholder: "Search",
           },
-          "/zh/": {
-            placeholder: "搜索",
-          },
         },
       },
     ],
     ["@vuepress/back-to-top"],
+    [
+      "@vuepress/pwa",
+      {
+        skipWaiting: true,
+      },
+    ],
   ],
   theme: "@vuepress/theme-default",
   themeConfig: {
-    logo: "https://vuejs.org/images/logo.png",
+    logo: "/images/bag.png",
     repo: "shopah/documentation",
+    editLink: false,
     navbar: [
       // NavbarItem
       {
